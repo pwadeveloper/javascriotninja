@@ -1,0 +1,59 @@
+*{
+margin: 3px 0px 0px 0px;
+padding: 0px;
+}
+h1{
+    text-align:center;
+}
+header {
+    font: bold 36px/120% Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #c00;
+    text-transform: uppercase;
+}
+/*background-style:cover; -used to centre images properly mostly used 
+    for fullcreen background*/ 
+
+
+/**<!DOCTYPE html>
+<head>
+  <title>Anna Dowlin</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://dash.ga.co/assets/anna-bg.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <img src="/assets/anna.png">
+  <p>Hi! I'm Anna, a NYC-based marketer. Say hello!</p>
+  <input type="email" placeholder="Your email">
+  <input type="submit">
+</body> 
+
+    Dear host,
+
+    I’m running a WooCommerce webshop on one of your servers and WooCommerce has recommended using at least PHP 5.6. WordPress, the content management system that WooCommerce uses, has listed PHP 7 as the recommended version on n their requirements page: https://wordpress.org/about/requirements/
+
+    Can you please let me know if my hosting supports PHP 5.6 or higher and how I can upgrade?
+
+    Looking forward to your reply.
+
+**/
