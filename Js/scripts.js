@@ -626,3 +626,19 @@ return Math.floor(6 * Math.random()) + 1;
 }
 }*/
 
+
+
+
+///DOM CODES
+
+var newPara = document.createElement('p');
+var text = document.createTextNode('Transition 1');
+newPara.appendChild(text);
+
+function createElement(tag,text){
+    el = document.createElement(tag);
+    el.textContent = text;
+    return el
+}
+
+var anotherPara = createElement("p","Transition 2");
