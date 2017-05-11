@@ -57,3 +57,25 @@ header {
     Looking forward to your reply.
 
 **/
+
+section p{
+  font: bold 24px/150% Arial, Helvetica, sans-serif;
+  background: #0f0333;
+  color:whitesmoke;
+  border:yellow 2px dashed;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+.right {
+background: #0c0;
+border: #090 2px solid;
+color: #060;
+}
+.wrong {
+background: #c00;
+border: #900 2px dashed;
+color: #600;
+}

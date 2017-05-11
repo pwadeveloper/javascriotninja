@@ -1,3 +1,16 @@
+function update(element,content,klass){
+    var p = element.firstChild || document.createElement("p");
+    p.textContent = content;
+    element.appendChild(p);
+    if(klass){
+        p.className = klass;
+    }
+
+}
+
+var $question = document.getElementById("question");
+var $score = document.getElementById("score");
+var $feedback = document.getElementById("feedback");
 /*
 
 //welcome the user
@@ -196,7 +209,7 @@ quiz = {
 }
 
 var score = 0;
-
+update($score,score)
 play(quiz);
 
 function play(quiz) {
@@ -208,22 +221,25 @@ function play(quiz) {
     gameOver();
 
     function ask(question) {
-        return prompt(quiz.question + question); // quiz[i][0] is the ith questions
+       update($question, quiz.question + question); // helps the question to be display in html
+        return prompt ("Enter your answer:")
+        
     }
 
     function check(answer) {
         if (answer === quiz.questions[i].answer) { // quiz[i][1] is the ith answer
-            alert("Correct!");
+            update($feedback, "correct", "right");
             // increase score by 1
             score++;
+            update($score,score)
         } else {
-            alert("Wrong!");
+            update($feedback, "Wrong!","wrong");
         }
     }
 
     function gameOver() {
 
-        alert("Game Over, you scored " + score + " points");
+        update($question, "Game Over, you scored " + score + " points");
     }
 
 
@@ -642,3 +658,8 @@ function createElement(tag,text){
 }
 
 var anotherPara = createElement("p","Transition 2");
+
+
+//Events
+document.onclick = function() {console.log("You clicked!");}
+
