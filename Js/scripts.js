@@ -1,3 +1,5 @@
+/*
+
 function update(element,content,klass){
     var p = element.firstChild || document.createElement("p");
     p.textContent = content;
@@ -195,7 +197,7 @@ function play(quiz) {
 
 } */
 
-
+/*
 
 quiz = {
     "name": "Super Hero Name Quiz",
@@ -245,6 +247,7 @@ function play(quiz) {
 
 }
 
+*/
 
 /*function square(x) {
     return x * x;
@@ -658,8 +661,4 @@ function createElement(tag,text){
 }
 
 var anotherPara = createElement("p","Transition 2");
-
-
-//Events
-document.onclick = function() {console.log("You clicked!");}
 
