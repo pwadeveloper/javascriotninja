@@ -56,3 +56,28 @@ addEventListener("click", function(event) {
 if (event.shiftKey)
 console.log("A Shifty Click!");
 });
+
+once = document.getElementById("once");
+once.addEventListener("click", remove);
+
+function remove(event){
+    console.log("Enjoy this while it lasts!");
+    once.style.backgroundColor = "pink";
+    once.removeEventListener("click", remove);
+}
+
+var broken = document.getElementById("broken");
+
+broken.addEventListener("click", function(event){
+    event.preventDefault();
+    console.log("Broken Link!");
+})
+ul =document.getElementById("list");
+li = document.querySelector("#list li")
+
+ul.addEventListener("click", function(event){
+    console.log("Clicked on ul");
+},true)
+li.addEventListener("click", function(event){
+    console.log("clicked on li");
+},true)
