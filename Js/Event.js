@@ -33,6 +33,7 @@ console.log("screen:(" +event.screenX + "," +event.screenY+ "), page: (" + event
 */
 var dblclick = document.getElementById("dblclick");
 dblclick.addEventListener("dblclick", highlight);
+
 function highlight(event){
 event.target.classList.toggle("highlight");
 }
@@ -81,3 +82,5 @@ ul.addEventListener("click", function(event){
 li.addEventListener("click", function(event){
     console.log("clicked on li");
 },true)
+
+ul.addEventListener("click",highlight);

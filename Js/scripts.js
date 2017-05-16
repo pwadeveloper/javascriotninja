@@ -1,4 +1,9 @@
-/*
+
+
+var $question = document.getElementById("question");
+var $score = document.getElementById("score");
+var $feedback = document.getElementById("feedback");
+var $button = document.getElementById("button");
 
 function update(element,content,klass){
     var p = element.firstChild || document.createElement("p");
@@ -7,16 +12,13 @@ function update(element,content,klass){
     if(klass){
         p.className = klass;
     }
-
 }
 
-var $question = document.getElementById("question");
-var $score = document.getElementById("score");
-var $feedback = document.getElementById("feedback");
-/*
+$button.addEventListener('click', function() { play(quiz) } , false);
+
+
 
 //welcome the user
-alert("Welcome to Quiz Ninja!");
 
 
 
@@ -197,7 +199,6 @@ function play(quiz) {
 
 } */
 
-/*
 
 quiz = {
     "name": "Super Hero Name Quiz",
@@ -206,13 +207,14 @@ quiz = {
     "questions": [
     { "question": "Superman", "answer": "Clarke Kent" },
     { "question": "Batman", "answer": "Bruce Wayne" },
-    { "question": "Wonder Woman", "answer": "Dianna Prince" }
+    { "question": "Wonder Woman", "answer": "Diana Prince" }
     ]
 }
 
 var score = 0;
 update($score,score)
 play(quiz);
+
 
 function play(quiz) {
     for (var i = 0, question, answer, max = quiz.questions.length; i < max; i++) {
@@ -247,7 +249,7 @@ function play(quiz) {
 
 }
 
-*/
+
 
 /*function square(x) {
     return x * x;
@@ -662,3 +664,78 @@ function createElement(tag,text){
 
 var anotherPara = createElement("p","Transition 2");
 
+//search box code
+var form = document.forms['search'];
+var input = form.elements[0];
+var button = form.elements[1];
+form.action = "/alt/search"
+
+
+/*
+
+function primes(n) {
+    var = notPrime = false;
+    for (var x = 0; x < n; n++) {
+        if (notPrime === false) {
+            console.log(x);
+        }
+    }
+    for (var i = 0; i < x; i++) {
+        var y = x % i;
+        if (y === 0 && i !== x) {
+            notPrime = true;
+        }
+
+    }
+
+}
+
+primes();
+*/
+
+        function prime(n) {
+            for (var x = 2; x < n; x++) {
+                if(n % x===0){
+                    return console.log(n+ " is not a prime");
+                } else{
+                    return console.log(n+ " is a prime");
+                }
+                return n > 1;
+                }
+        
+
+            /* function isPrime(value) {
+                   for(var i = 2; i < value; i++) {
+                       if(value % i === 0) {
+                           return false;
+                       }
+                   }
+                   return value > 1;
+               }  }*/}
+
+
+             //  arrow(2)=>function1;1
+
+//code to wrie word backward
+
+function muf(word) {
+    results=[];
+    for (var i = 0; i < word.length; i++) { 
+        results.unshift(word[i]);
+
+        }
+        var res = results.join(" ");
+       console.log(res);
+
+    }
+
+    function cap(word) {
+    let=[i,j];
+    for (var i = 0; i < word.length; i++) { 
+        results.unshift(word[i]);
+
+        }
+        var res = results.join(" ");
+       console.log(res);
+
+    }
